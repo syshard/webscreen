@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Screen Recorder</title>
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="dist/style.css" />
+</head>
+<body>
+	
+	<header class="header-site">
+		<h1 class="text-2xl font-bold uppercase">Web Screen Recorder</h1>
+		<div class="flex flex-wrap -mx-4">
+			<button class="start-recording mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50">
+				<i class="bx bx-fullscreen"></i>
+				Record Screen
+			</button>
+			<button class="stop-recording mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50" disabled>
+				<i class="bx bx-stop-circle"></i>
+				Stop Recording
+			</button>
+			<a class="download-video text-center mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50" disabled>
+				<i class="bx bx-download"></i>
+				Download
+			</a>
+		</div>
+	</header>
+
+	<main class="overflow-hidden">
+		<div class="container mx-auto py-8 px-4">			
+			<div class="esquerda">
+				<h2 class="text-xl text-gray-500 uppercase font-light mb-4">
+					Recorded video
+				</h2>
+
+				<video src="" class="recorded-video bg-black w-full h-auto mb-8"></video>
+			</div>
+			<div class="direita">
+				<h2 class="text-xl text-gray-500 uppercase font-light mb-4">
+					Video recorder
+				</h2>
+	
+				<video src="" autplay class="video-feedback bg-black w-full h-auto mb-4"></video>
+	
+				<div class="flex flex-wrap -mx-4 mb-8">
+					<button class="start-recording mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50">
+						Record Screen
+					</button>
+					<button class="stop-recording mx-4 flex-1 bg-gradient-to-br from-purple-500 to to-pink-500 p-4 uppercase text-lg font-bold transition-all duration-300 hover:opacity-90 disabled:opacity-50" disabled>
+						Stop Recording
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="dist/main.js"></script>
+</body>
+</html>
